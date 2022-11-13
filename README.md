@@ -2,7 +2,7 @@
   <h1 style="text-align: center;">Dectma 🍅</h1>
   <img src="https://img.shields.io/github/workflow/status/manabil/dectma/CI%20Testing?style=for-the-badge">
   <img src="https://img.shields.io/github/license/manabil/dectma?style=for-the-badge">
-  <img src="https://img.shields.io/github/repo-size/manabil/dectma?style=for-the-badge">
+  <img src="https://img.shields.io/github/repo-size/manabil/dectma?style=for-the-badge&color=black">
   <img src="https://img.shields.io/github/issues-closed/manabil/dectma?style=for-the-badge&color=blue">
   <img src="https://img.shields.io/github/issues-pr-closed/manabil/dectma?style=for-the-badge&color=blue">
   <img alt="Visitor Badge" src="https://visitor-badge.feriirawann.repl.co?username=manabil&repo=dectma&label=VISITOR&style=for-the-badge&color=red&contentType=svg">
