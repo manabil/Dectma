@@ -67,7 +67,7 @@ All code contributions - including those of people having commit access - must g
 ## Security
 For security issues, kindly email us at [manabil](mailto:mammarnabil@students.unnes.ac.id) instead of posting a public issue on GitHub or other contributor.
 
-### Code of Conduct
+## Code of Conduct
 This project has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the code of conduct](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## License
