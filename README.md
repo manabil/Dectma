@@ -1,5 +1,10 @@
-<h1 style="text-align: center;">Dectma</h1>
+<h1 style="text-align: center;">Dectma 🍅</h1>
 
-![Tomatoes](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-cWQwVi2psqrt9WXSkbhiKQ5tDzC5dGK-g&usqp=CAU)
+<center>
 
-A web application to detect diseases in tomatoes through image detection on tomato leaves using YoLo
+![Tomatoes Pictures](https://www.healthifyme.com/blog/wp-content/uploads/2022/01/Benefits-of-Tomatoes-750x375.jpeg)
+</br><q><i>Tomato seedlings have been grown in space before!</i></q>
+
+</center>
+
+***Dectma*** is a web application to detect diseases in tomatoes through image detection on tomato leaves using YoLo
