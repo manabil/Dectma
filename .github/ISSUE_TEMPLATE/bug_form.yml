@@ -1,5 +1,5 @@
 name: Lapor Bug
-description: Lha kok error, lapor lah
+description: Lha kok error💢, lapor lah
 title: "[Bug] "
 labels: "bug"
 assignees: "manabil,mfakhrulam,pureism"
@@ -8,7 +8,7 @@ body:
     id: what-happened
     attributes:
       label: Gimana Errornya?
-      description: Ceritakan errornya secara kronologis (kamu bisa kirim link gambarnya juga), lalu apa yang kamu harapkan saat program jalan?
+      description: Ceritakan errornya secara kronologis (bisa tambah gambar biar jelas), lalu apa yang kamu harapkan saat program jalan?
       placeholder: Saat aku buka ...
     validations:
       required: true
@@ -26,13 +26,16 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: Saat error, kamu pake browser apa?
+      label: Browser.
+      description: Saat error, kamu pake browser apa?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
