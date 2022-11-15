@@ -7,7 +7,9 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Gimana Errornya?
+      label: | 
+        Gimana Errornya?
+        ---
       description: Ceritakan errornya secara kronologis (bisa tambah gambar biar jelas), lalu apa yang kamu harapkan saat program jalan?
       placeholder: Saat aku buka ...
     validations:
