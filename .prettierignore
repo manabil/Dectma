@@ -1,0 +1,9 @@
+node_modules/
+*.json
+config/
+dist/
+.env
+*.md
+LICENSE
+.github/
+*.py
