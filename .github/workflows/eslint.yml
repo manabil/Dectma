@@ -1,34 +1,22 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# ESLint is a tool for identifying and reporting on patterns
-# found in ECMAScript/JavaScript code.
-# More details at https://github.com/eslint/eslint
-# and https://eslint.org
-
 name: ESLint
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: "main"
 
 jobs:
-  eslint:
-    name: Run eslint scanning
+  Linting:
+    name: Run ESlint scanning
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Set up checkout code
         uses: actions/checkout@v3
 
-      - name: Install ESLint
+      - name: Install dependencies
         run: |
           npm install eslint eslint-config-google --save-dev
 
-      - name: Run ESLint
+      - name: Analysing the code with ESlint
         run: npx eslint .
           --config config/.eslintrc.json
           --ext .js,
-
-      - name: Result
-        run: echo "Yeay there is no file to be lint"
