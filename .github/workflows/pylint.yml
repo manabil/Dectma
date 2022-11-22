@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Run pylint scannin
+    name: Run pylint scanning
     runs-on: ubuntu-latest
     steps:
       - name: Set up checkout code
