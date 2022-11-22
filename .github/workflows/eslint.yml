@@ -29,6 +29,7 @@ jobs:
         run: npx eslint .
           --config config/.eslintrc.json
           --ext .js,
+          --fix
 
       - name: Result
         run: echo "Yeay there is no file to be lint"
