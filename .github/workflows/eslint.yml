@@ -23,8 +23,7 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install eslint
-          npm install @eslint-config-google
+          npm install eslint @eslint-config-google --save-dev
 
       - name: Run ESLint
         run: npx eslint .
