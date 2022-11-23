@@ -14,9 +14,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install eslint eslint-config-google --save-dev
+          npm install eslint eslint-config-google prettier --save-dev
 
       - name: Analysing the code with ESlint
         run: npx eslint .
           --config config/.eslintrc.json
           --ext .js,
+
+      - name: Analysing the style with Prettier
+        run: npx prettier --check
