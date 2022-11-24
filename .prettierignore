@@ -7,3 +7,4 @@ dist/
 LICENSE
 .github/
 *.py
+documentation/
