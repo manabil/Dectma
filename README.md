@@ -40,7 +40,8 @@ Tomato is one of the horticultural plants that are commonly found in Indonesia. 
 <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> 
 <a href="https://numpy.org/" target="_blank" rel="noreferrer"> <img src="https://numpy.org/images/logo.svg" alt="numpy" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer"> <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="scikitlearn"  height="40"/> </a> 
-<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noreferrer"> <img src="https://pjreddie.com/media/image/yologo_2.png" alt="python" height="40"/> </a>
+<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noreferrer"> <img src="https://pjreddie.com/media/image/yologo_2.png" alt="yolo" height="40"/> </a>
+<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="pytorch" height="40"/> </a>
 
 ### Web Development
 > <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank" rel="noreferrer"> <img src="https://flask.palletsprojects.com/en/2.2.x/_images/flask-logo.png" alt="flask"  height="40"/> </a> 
