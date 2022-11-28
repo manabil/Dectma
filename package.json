@@ -13,7 +13,6 @@
     "start-dev": "webpack serve --config config/webpack.dev.js"
   },
   "repository": {
-    "type": "git",
     "url": "git+https://github.com/manabil/Dectma.git"
   },
   "keywords": [
