@@ -10,6 +10,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": ["config/", "dist/", "*.py", ".github/", 'documentation/'],
+  "ignorePatterns": ["config/", "dist/", "*.py", ".github/", "documentation/"],
   "rules": {}
 }
