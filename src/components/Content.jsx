@@ -1,7 +1,9 @@
 export function Content() {
   return (
     <>
-      <h1 className="text-xl font-bold text-center mt-10 ">Ini content</h1>
+      <p></p>
+      <button onClick={() => tambah}>Tambah</button>
+      <h1 className="text-xl font-bold text-center mt-10 ">WKWKWK content</h1>
     </>
   );
 }
