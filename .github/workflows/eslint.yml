@@ -1,0 +1,25 @@
+name: ESLint
+
+on:
+  pull_request:
+    branches: "main"
+
+jobs:
+  Linting:
+    name: Run ESlint scanning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          npm install eslint eslint-config-google prettier --save-dev
+
+      - name: Analysing the code with ESlint
+        run: npx eslint .
+          --config config/.eslintrc.json
+          --ext .js,
+
+      - name: Analysing the style with Prettier
+        run: npx prettier --check

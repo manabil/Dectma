@@ -1,0 +1,50 @@
+name: Lapor Bug
+description: Lha kok error💢, lapor lah
+title: "[Bug] "
+labels: "bug"
+assignees: "manabil,mfakhrulam,pureism"
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "Gimana Errornya?"
+      description: Ceritakan errornya secara kronologis (bisa tambah gambar biar jelas), lalu apa yang kamu harapkan saat program jalan?
+      placeholder: Saat aku buka ...
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Sistem Operasi
+      description: Saat error, kamu pake OS apa?
+      options:
+        - Windows 10
+        - Windows 8
+        - Windows 7
+        - Linux
+        - Mac
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser
+      description: Saat error, kamu pake browser apa? (Bisa memilih >1)
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Error
+      description: Copy paste log error terkait.
+      render: shell
+  - type: markdown
+    attributes:
+      value: |
+        Suwun dah sempetin waktu buat report bug! 🙏🤗
