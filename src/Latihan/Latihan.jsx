@@ -50,36 +50,36 @@ export default function Latihan() {
 
   return (
     <div>
-      <h1 className="text-center text-[2em] mt-7">Updating array & object</h1>
+      <h1 className="mt-7 text-center text-[2em]">Updating array & object</h1>
       <LatihanButton name={'Tambah'} click={tambah} count={count} />{' '}
       <LatihanButton name={'Kurang'} click={kurang} count={count} />{' '}
       <button
-        className="btn btn-primary"
+        className="btn-primary btn"
         onClick={() => {
           alert(message);
         }}
       >
         Tambah
       </button>
-      <h1 className="text-xl font-bold mt-4">Terklik sebanyak {count}</h1>
+      <h1 className="mt-4 text-xl font-bold">Terklik sebanyak {count}</h1>
       <br />
       <input
         type="text"
         onChange={handleNama}
         value={coba.nama}
-        className="border border-orange-800 rounded-md"
+        className="rounded-md border border-orange-800"
       />{' '}
       <input
         type="text"
         onChange={handleHobi}
         value={coba.hobi}
-        className="border border-orange-800 rounded-md"
+        className="rounded-md border border-orange-800"
       />{' '}
       <input
         type="text"
         onChange={handleSkill}
         value={coba.skill.programming}
-        className="border border-orange-800 rounded-md"
+        className="rounded-md border border-orange-800"
       />
       <h1 className="text-xl font-bold ">Nama saya {coba.nama}</h1>
       <h1 className="text-xl font-bold ">Hobi saya {coba.hobi}</h1>
@@ -92,7 +92,7 @@ export default function Latihan() {
         placeholder="Isi nama artis"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="border border-orange-800 rounded-md"
+        className="rounded-md border border-orange-800"
       />{' '}
       <button
         type="submit"
@@ -100,18 +100,19 @@ export default function Latihan() {
           setPeople([...people, { id: idPeople, name: name }]);
           setIdPeople(people + 1);
         }}
-        className="btn btn-primary"
+        className="btn-primary btn"
       >
         Tambah Artis
       </button>
       <ul>
         {people.map((person) => (
-          <li key={person.id}>
+          <li key={person.id} className="mt-2 text-center">
             {person.name}{' '}
             <button
               onClick={() => {
                 setPeople(people.filter((a) => a.id !== person.id));
               }}
+              className="btn-error btn-sm rounded-md"
             >
               Delete
             </button>

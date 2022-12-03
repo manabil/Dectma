@@ -20,6 +20,7 @@ export const SharingState = () => {
 
   return (
     <div className="grid place-content-center">
+      <h1 className="mt-7 text-center text-[2em]">Sharing State</h1>
       <h2>Almaty, Kazakhstan</h2>
       <Panel
         title="About"
