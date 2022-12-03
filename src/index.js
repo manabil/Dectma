@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Latihan from './Latihan/Latihan';
 import { LatihanForm } from './Latihan/LatihanForm';
 import { SharingState } from './Latihan/SharingState';
+import { PreserveReset } from './Latihan/PreserveReset';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,5 +14,6 @@ root.render(
     <Latihan />
     <LatihanForm />
     <SharingState />
+    <PreserveReset />
   </React.StrictMode>
 );

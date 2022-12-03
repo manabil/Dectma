@@ -59,7 +59,7 @@ export default function Latihan() {
           alert(message);
         }}
       >
-        Tambah
+        Clicked Event
       </button>
       <h1 className="mt-4 text-xl font-bold">Terklik sebanyak {count}</h1>
       <br />
