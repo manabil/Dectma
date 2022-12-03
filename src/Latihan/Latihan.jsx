@@ -49,9 +49,10 @@ export default function Latihan() {
   }
 
   return (
-    <>
-      <LatihanButton name={'Tambah'} click={tambah} count={count} />
-      <LatihanButton name={'Kurang'} click={kurang} count={count} />
+    <div>
+      <h1 className="text-center text-[2em] mt-7">Updating array & object</h1>
+      <LatihanButton name={'Tambah'} click={tambah} count={count} />{' '}
+      <LatihanButton name={'Kurang'} click={kurang} count={count} />{' '}
       <button
         className="btn btn-primary"
         onClick={() => {
@@ -60,26 +61,46 @@ export default function Latihan() {
       >
         Tambah
       </button>
-      <input type="text" onChange={handleNama} value={coba.nama} />
-      <input type="text" onChange={handleHobi} value={coba.hobi} />
+      <h1 className="text-xl font-bold mt-4">Terklik sebanyak {count}</h1>
+      <br />
+      <input
+        type="text"
+        onChange={handleNama}
+        value={coba.nama}
+        className="border border-orange-800 rounded-md"
+      />{' '}
+      <input
+        type="text"
+        onChange={handleHobi}
+        value={coba.hobi}
+        className="border border-orange-800 rounded-md"
+      />{' '}
       <input
         type="text"
         onChange={handleSkill}
         value={coba.skill.programming}
+        className="border border-orange-800 rounded-md"
       />
-
+      <h1 className="text-xl font-bold ">Nama saya {coba.nama}</h1>
+      <h1 className="text-xl font-bold ">Hobi saya {coba.hobi}</h1>
+      <h1 className="text-xl font-bold ">
+        Skill saya {coba.skill.programming}
+      </h1>
+      <br />
       <input
         type="text"
         placeholder="Isi nama artis"
         value={name}
         onChange={(e) => setName(e.target.value)}
-      />
+        className="border border-orange-800 rounded-md"
+      />{' '}
       <button
         type="submit"
         onClick={() => {
           setPeople([...people, { id: idPeople, name: name }]);
           setIdPeople(people + 1);
         }}
+        className="btn btn-primary"
       >
         Tambah Artis
       </button>
@@ -97,20 +118,6 @@ export default function Latihan() {
           </li>
         ))}
       </ul>
-
-      <h1 className="text-xl font-bold text-center mt-10 ">
-        Terklik sebanyak {count}
-      </h1>
-
-      <h1 className="text-xl font-bold text-center mt-10 ">
-        Nama saya {coba.nama}
-      </h1>
-      <h1 className="text-xl font-bold text-center mt-10 ">
-        Hobi saya {coba.hobi}
-      </h1>
-      <h1 className="text-xl font-bold text-center mt-10 ">
-        Skill saya {coba.skill.programming}
-      </h1>
-    </>
+    </div>
   );
 }

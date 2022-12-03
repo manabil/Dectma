@@ -44,7 +44,8 @@ export const LatihanForm = () => {
 
   return (
     <div className="grid place-content-center">
-      <form onSubmit={handleSubmit}>
+      <h1 className="text-[2em]">Reacting to Input with State</h1>
+      <form onSubmit={handleSubmit} className="mb-16">
         <LatihanInput
           header="Masukkan text"
           values={answer}
