@@ -47,7 +47,7 @@ export const PreserveReset = () => {
   const [to, setTo] = useState(contacts[0]);
 
   return (
-    <div className="grid place-content-center">
+    <div className="grid justify-center">
       <h1 className="mt-7 text-center text-[2em]">Preserve and Reset State</h1>
       <ContactList
         contacts={contacts}

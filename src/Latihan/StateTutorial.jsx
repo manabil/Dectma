@@ -1,7 +1,16 @@
 import { useState } from 'react';
-import LatihanButton from './LatihanButton';
 
-export default function Latihan() {
+function LatihanButton({ name, click, count }) {
+  return (
+    <>
+      <button className="btn-warning btn" onClick={click}>
+        {name} {count}
+      </button>
+    </>
+  );
+}
+
+export default function StateTutorial() {
   const [count, setCount] = useState(0);
   const [coba, setCoba] = useState({
     nama: 'Nabil',
@@ -49,7 +58,7 @@ export default function Latihan() {
   }
 
   return (
-    <div>
+    <div className="grid justify-center gap-2">
       <h1 className="mt-7 text-center text-[2em]">Updating array & object</h1>
       <LatihanButton name={'Tambah'} click={tambah} count={count} />{' '}
       <LatihanButton name={'Kurang'} click={kurang} count={count} />{' '}
@@ -67,19 +76,19 @@ export default function Latihan() {
         type="text"
         onChange={handleNama}
         value={coba.nama}
-        className="rounded-md border border-orange-800"
+        className="rounded-md border border-orange-800 p-2"
       />{' '}
       <input
         type="text"
         onChange={handleHobi}
         value={coba.hobi}
-        className="rounded-md border border-orange-800"
+        className="rounded-md border border-orange-800 p-2"
       />{' '}
       <input
         type="text"
         onChange={handleSkill}
         value={coba.skill.programming}
-        className="rounded-md border border-orange-800"
+        className="rounded-md border border-orange-800 p-2"
       />
       <h1 className="text-xl font-bold ">Nama saya {coba.nama}</h1>
       <h1 className="text-xl font-bold ">Hobi saya {coba.hobi}</h1>
@@ -92,7 +101,7 @@ export default function Latihan() {
         placeholder="Isi nama artis"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="rounded-md border border-orange-800"
+        className="rounded-md border border-orange-800 p-2"
       />{' '}
       <button
         type="submit"

@@ -1,7 +1,25 @@
-import { LatihanInput } from './LatihanInput';
 import { useState } from 'react';
 
-export const LatihanForm = () => {
+const LatihanInput = ({ header, values, changeEvent, isDisabled }) => {
+  return (
+    <div className="form-control ">
+      <label className="label">
+        <span className="label-text">{header}</span>
+      </label>
+      <label className="input-group">
+        <input
+          type="text"
+          className="input-bordered input"
+          value={values}
+          onChange={changeEvent}
+          disabled={isDisabled}
+        />
+      </label>
+    </div>
+  );
+};
+
+export const StateReact = () => {
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState(null);
   const [status, setStatus] = useState('empty');
@@ -55,7 +73,7 @@ export const LatihanForm = () => {
         <p>{status}</p>
         <button
           type="submit"
-          className="btn btn-primary mt-4"
+          className="btn-primary btn mt-4"
           disabled={answer.length === 0 || status === 'submitting'}
         >
           Submit
