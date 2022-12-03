@@ -108,7 +108,7 @@ function Task({ task, onChange, onDelete }) {
             done: e.target.checked,
           });
         }}
-      />
+      />{' '}
       {taskContent}{' '}
       <button className="btn-error btn-sm" onClick={() => onDelete(task.id)}>
         Delete

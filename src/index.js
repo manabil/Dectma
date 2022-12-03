@@ -7,6 +7,8 @@ import { StateReact } from './Latihan/StateReact';
 import { SharingState } from './Latihan/SharingState';
 import { PreserveReset } from './Latihan/PreserveReset';
 import { Reducer } from './Latihan/Reducer';
+import { Context } from './Latihan/Context';
+import { ContextReducer } from './Latihan/ContextReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,5 +19,7 @@ root.render(
     <SharingState />
     <PreserveReset />
     <Reducer />
+    <Context />
+    <ContextReducer />
   </React.StrictMode>
 );
