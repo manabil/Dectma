@@ -11,6 +11,7 @@ import { Context } from './Latihan/Context';
 import { ContextReducer } from './Latihan/ContextReducer';
 import { Ref } from './Latihan/Ref';
 import { RefDOM } from './Latihan/RefDOM';
+import { Effects } from './Latihan/Effects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,5 +26,6 @@ root.render(
     <ContextReducer />
     <Ref />
     <RefDOM />
+    <Effects />
   </React.StrictMode>
 );
