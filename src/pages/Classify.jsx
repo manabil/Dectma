@@ -1,44 +1,75 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import * as tf from '@tensorflow/tfjs';
+import { diseases } from '../data/diseases';
 
 export const Classify = () => {
   const [inProgress, setInProgress] = useState('idle');
-  let model = null;
+  const [imgPreview, setImgPreview] = useState();
+  const [predict, setPredict] = useState([]);
 
-  const loadModel = async () => {
-    setInProgress('Load the model');
-    model = await tf.loadLayersModel('model/model.json');
-    setInProgress('Idle');
+  if (inProgress === 'Finish') {
+    setInProgress(() => {
+      return (
+        <p>
+          Your disesase is {diseases[predict[0]].name} {predict[1]}
+        </p>
+      );
+    });
+  }
+
+  const preProcess = (image) => {
+    setInProgress('Preprocessing Data ...');
+    const imgNormalized = tf.tidy(() => {
+      const imgTensor = tf.browser.fromPixels(image);
+      const normalized = tf.scalar(1.0).sub(imgTensor.div(tf.scalar(255.0)));
+      const batchDims = normalized.expandDims(0);
+      const resized = tf.image.resizeBilinear(batchDims, [224, 224]);
+      return resized;
+    });
+    return imgNormalized;
   };
 
-  useEffect(() => {
-    loadModel();
-  }, []);
-
   const classify = async () => {
-    setInProgress('Processing');
-    const img = document.getElementById('img');
-    tf.tidy(async () => {
-      const jos = tf.browser.fromPixels(img);
-      const josPol = tf.expandDims(jos);
-      const josPolWow = tf.image.resizeBilinear(josPol, [224, 224]);
-      const predictions = await model.predict(josPolWow);
-      console.log('IMAGE FROM PIXEL');
-      console.log(josPol.shape);
-      console.log('RESIZE');
-      console.log(josPolWow.shape);
-      console.log('PREDICTION');
-      console.log(predictions);
+    try {
+      setInProgress('Predicting Image');
+      const model = await tf.loadLayersModel('model/model.json');
+
+      const img = document.getElementById('img');
+      const imgNormalized = preProcess(img);
+
+      const predictions = tf.tidy(() => {
+        const output = model.predict(imgNormalized);
+        const predictions = Array.from(tf.argMax(output, 1).dataSync());
+        const confidents = Math.round(output.max().arraySync() * 10000) / 100;
+        return [predictions[0], confidents];
+      });
+
       setInProgress('Finish');
-    });
+      setPredict(predictions);
+    } catch (error) {
+      console.error(error);
+      setInProgress(() => {
+        return <p>Error to predict image. Please try again</p>;
+      });
+    }
+  };
+
+  const handleInput = (e) => {
+    const urlPreview = URL.createObjectURL(e.target.files[0]);
+    setImgPreview(urlPreview);
   };
 
   return (
     <div>
       <Navbar />
-      <div className="grid grid-cols-1 p-2 bg-slate-300 justify-items-center gap-5">
-        <img id="img" src="healthy.jpg" alt="" />
+      <div className="grid grid-cols-1 p-2 justify-items-center gap-5">
+        <input
+          type="file"
+          className="file-input file-input-bordered file-input-md w-full max-w-xs"
+          onChange={handleInput}
+        />
+        <img id="img" src={imgPreview} alt="" />
         <button className="btn btn-primary" onClick={classify}>
           Classify
         </button>
