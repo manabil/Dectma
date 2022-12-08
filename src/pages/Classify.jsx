@@ -6,12 +6,12 @@ import * as tf from '@tensorflow/tfjs';
 import { diseases } from '../data/diseases';
 
 export const Classify = () => {
-  const [inProgress, setInProgress] = useState('Your Prediction Goes Here');
+  const [progress, setProgress] = useState('idle');
   const [imgPreview, setImgPreview] = useState();
   const [predict, setPredict] = useState([]);
 
-  if (inProgress === 'Finish') {
-    setInProgress(() => {
+  if (progress === 'finish') {
+    setProgress(() => {
       return (
         <p>
           Your disesase is {diseases[predict[0]].name} {predict[1]}
@@ -21,7 +21,6 @@ export const Classify = () => {
   }
 
   const preProcess = (image) => {
-    setInProgress('Preprocessing Data ...');
     const imgNormalized = tf.tidy(() => {
       const imgTensor = tf.browser.fromPixels(image);
       const normalized = tf.scalar(1.0).sub(imgTensor.div(tf.scalar(255.0)));
@@ -34,7 +33,7 @@ export const Classify = () => {
 
   const classify = async () => {
     try {
-      setInProgress('Predicting Image');
+      setProgress('process');
       const model = await tf.loadLayersModel('model/model.json');
 
       const img = document.getElementById('img');
@@ -47,11 +46,11 @@ export const Classify = () => {
         return [predictions[0], confidents];
       });
 
-      setInProgress('Finish');
+      setProgress('finish');
       setPredict(predictions);
     } catch (error) {
       console.error(error);
-      setInProgress(() => {
+      setProgress(() => {
         return <p>Error to predict image. Please try again</p>;
       });
     }
@@ -71,17 +70,7 @@ export const Classify = () => {
           imgPreview={imgPreview}
           handleClick={classify}
         />
-        <DescCard progressState={inProgress} />
-
-        {/* <input
-          type="file"
-          className="file-input file-input-bordered file-input-md w-full max-w-xs"
-          onChange={handleInput}
-        /> */}
-        {/* <img id="img" src={imgPreview} alt="" /> */}
-        {/* <button className="btn-primary btn" onClick={classify}>
-          Classify
-        </button> */}
+        <DescCard progressState={progress} />
       </div>
     </div>
   );
