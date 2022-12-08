@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Navbar } from '../components/Navbar';
+import { ImageCard } from '../components/ImageCard';
+import { DescCard } from '../components/DescCard';
 import * as tf from '@tensorflow/tfjs';
 import { diseases } from '../data/diseases';
 
 export const Classify = () => {
-  const [inProgress, setInProgress] = useState('idle');
+  const [inProgress, setInProgress] = useState('Your Prediction Goes Here');
   const [imgPreview, setImgPreview] = useState();
   const [predict, setPredict] = useState([]);
 
@@ -63,17 +65,23 @@ export const Classify = () => {
   return (
     <div>
       <Navbar />
-      <div className="grid grid-cols-1 p-2 justify-items-center gap-5">
-        <input
+      <div className="grid grid-cols-1 justify-center justify-items-center gap-5 p-4">
+        <ImageCard
+          handleInput={handleInput}
+          imgPreview={imgPreview}
+          handleClick={classify}
+        />
+        <DescCard progressState={inProgress} />
+
+        {/* <input
           type="file"
           className="file-input file-input-bordered file-input-md w-full max-w-xs"
           onChange={handleInput}
-        />
-        <img id="img" src={imgPreview} alt="" />
-        <button className="btn btn-primary" onClick={classify}>
+        /> */}
+        {/* <img id="img" src={imgPreview} alt="" /> */}
+        {/* <button className="btn-primary btn" onClick={classify}>
           Classify
-        </button>
-        {inProgress}
+        </button> */}
       </div>
     </div>
   );
