@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  background-color: #f0e9d2;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link:hover,
+nav.navbar .navbar-nav .nav-link.navbar-link.active {
+  opacity: 1;
+}
+nav.navbar .navbar-text i,
+nav.navbar .navbar-nav .nav-link.navbar-link i {
+  display: none;
+}
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  transition: 0.3s ease-in-out;
+}
+nav.navbar a.navbar-brand {
+  width: 10%;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 25px;
+  letter-spacing: 0.8px;
+  opacity: 0.8;
+  color: #000;
+}
+nav.navbar .theme-toggle {
+  padding-left: 15px;
+  cursor: pointer;
+}
+nav.navbar .theme-toggle i {
+  font-size: 40px;
+}
+/* home section */
+
+.home {
+  background-color: #fff;
+  height: 100vh;
+  top: 0;
+  padding: 250px 0 100px 0;
+  background-image: url(./assets/green.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image img {
+  height: 250px;
+}
+.home .tagline {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  font-size: 20px;
+  margin-bottom: 18px;
+  display: inline-block;
+  background: linear-gradient(
+    90.21deg,
+    rgba(38, 159, 147, 0.5) -5.91%,
+    rgba(26, 2, 131, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.home h1 {
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 40px;
+  line-height: 1em;
+  margin-bottom: 20px;
+  display: block;
+  width: 90%;
+}
+.home .image {
+  width: 100%;
+}
+.home .image img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Features */
+.feature {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.feature-bx {
+  background: #e6ddc4;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.feature h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.feature h5 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+.feature-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.feature .item {
+  display: block;
+}
+.feature-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+/* About */
+
+.about h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.about .image {
+  width: 100%;
+}
+.about p {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+}
+.about .image img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.footer .tagline {
+  width: 10%;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  /* Home */
+
+  .home {
+    padding: 150px 0 100px 0;
+  }
+  .home .tagline {
+    font-size: 18px;
+  }
+  .home h1 {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+  }
+  .home .d-flex {
+    position: relative;
+  }
+  .home .wrap-text {
+    z-index: 1;
+  }
+  .home .image {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    width: 50%;
+  }
+  .image img {
+    height: 125px;
+  }
+}
+/* Footer */
+.footer .tagline {
+  display: block;
+}
+.footer .text-center p {
+  font-size: 15px;
+}
+.footer i {
+  font-size: 40px;
+}
+
+@media (max-width: 575.98px) {
+  nav.navbar .collapse {
+    margin-left: 0;
+  }
+  .home .tagline {
+    font-size: 15px;
+  }
+  .home h1 {
+    letter-spacing: 0.5px;
+    font-size: 32px;
+  }
+}
