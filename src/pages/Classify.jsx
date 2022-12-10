@@ -98,8 +98,8 @@ export const Classify = () => {
       publishable_key: 'rf_IFsWxkQvH2fVforkhmsTrQExKzB2',
     });
     const loadModel = await getAuth.load({
-      model: 'tomato416_8c',
-      version: 3,
+      model: 'tomato-leaf-diseases',
+      version: 1,
     });
     model = loadModel;
     setLoadWebcam((e) => (e = !e));
