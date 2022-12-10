@@ -1,5 +1,7 @@
 export const diseases = [
   {
+    id: 0,
+    slug: 'bacterial_spot',
     name: 'Bacterial Spot',
     symptoms:
       'Bintik-bintik basah air berwarna coklat tua muncul di daun. Kemudian bintik-bintik ini menjadi kehitaman, dan akhirnya jaringan yang terkena rontok meninggalkan lubang di daun. Bintik-bintik hitam timbul yang kemudian menjadi bintik bintik seperti keropeng muncul bersamaan pada buah.',
@@ -16,11 +18,19 @@ export const diseases = [
       'Penyemprotan dengan fungisida tembaga akan memberikan kontrol penyakit bakteri yang cukup baik',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 1,
+    slug: 'early_blight',
     name: 'Early Blight',
     symptoms:
       'Bercak besar tidak beraturan berwarna hitam, kematian jaringan yang dikelilingi oleh area kuning yang lebih besar. Bintik-bintik daun memiliki penampilan pita konsentris yang khas (cangkang tiram atau mata banteng).',
@@ -39,12 +49,20 @@ export const diseases = [
       'Pangkas dan buang cabang dan daun bagian bawah yang terinfeksi.',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
-    name: 'Late Bligh',
+    id: 2,
+    slug: 'late_blight',
+    name: 'Late Blight',
     symptoms:
       'Pada area daun sebagian besar tampak basah kuyup, yang akhirnya berubah menjadi coklat dan tipis. Pada buah juga nampak bercak besar berwarna coklat kehijauan yang tidak beraturan dengan penampilan kasar berminyak. Pada batang terlihat tidak beraturan berwarna hijau hingga hitam',
     cause: 'Pathogen Phytophthora Infestans',
@@ -60,11 +78,19 @@ export const diseases = [
       'Pangkas dan buang cabang dan daun bagian bawah yang terinfeksi',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 3,
+    slug: 'leaf_mold',
     name: 'Leaf Mold',
     symptoms:
       'Muncul sebagai bercak hijau muda di permukaan atas daun yang lebih tua. Di bawah daun di area ini, terlihat bercak keunguan atau hijau zaitun dari pertumbuhan jamur. Daun yang terinfeksi menguning dan menggugurkan tanaman.',
@@ -81,11 +107,19 @@ export const diseases = [
       'Pangkas dan buang cabang dan daun bagian bawah yang terinfeksi',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 4,
+    slug: 'septoria_leaf_spot',
     name: 'Septoria Leaf Spot',
     symptoms:
       'Lesi melingkar seperti basah air terjadi pertama kali pada daun yang lebih tua. Bintik-bintik ini kemudian berubah menjadi coklat dengan bagian tengah berwarna abu-abu dan mati, dan jika infeksi cukup parah, seluruh daun akan mati',
@@ -100,11 +134,19 @@ export const diseases = [
       'Pangkas dan buang cabang dan daun bagian bawah yang terinfeksi',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 5,
+    slug: 'spider_mites/two_spotted_spider_mite',
     name: 'Spider Mites / Two-Spotted Spider Mite',
     symptoms:
       'Daun menjadi putih kekuningan dan berbintik-bintik. Ditemukan tungau laba-laba merah tomat dapat ditemukan di kedua sisi daun tetapi lebih menyukai bagian bawah dekat urat daun. Terdapat jaring kecil seperti anyaman terutama di bagian bawah daun.',
@@ -120,10 +162,15 @@ export const diseases = [
       'Masih belum terdapat mitisida untuk melawan hama ini',
     ],
     ref: [
-      'https://www.dpi.nsw.gov.au/biosecurity/plant/insect-pests-and-plant-diseases/Tomato-red-spider-mite',
+      {
+        name_ref: 'DPI NSW',
+        link: 'Https://www.dpi.nsw.gov.au/biosecurity/plant/insect-pests-and-plant-diseases/Tomato-red-spider-mite',
+      },
     ],
   },
   {
+    id: 6,
+    slug: 'target_spot',
     name: 'Target Spot',
     symptoms:
       'Gejala awal pada daun adalah bercak-bercak kecil yang basah oleh air pada permukaan daun bagian atas. Bintik-bintik berkembang menjadi lesi nekrotik kecil yang memiliki bagian tengah berwarna coklat muda dan tepian gelap',
@@ -143,10 +190,15 @@ export const diseases = [
       'Pangkas dan buang cabang dan daun bagian bawah yang terinfeksi.',
     ],
     ref: [
-      'https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/target-spot-of-tomato.html',
+      {
+        name_ref: 'Vegetables Bayer',
+        link: 'Https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/target-spot-of-tomato.html',
+      },
     ],
   },
   {
+    id: 7,
+    slug: 'yellow_leaf_curl_virus',
     name: 'Tomato Yellow Leaf Curl Virus',
     symptoms:
       'Daun melengkung ke atas, tepi daun kuning (klorosis), daun lebih kecil dari biasanya, tanaman kerdil, dan bunga rontok. Jika tanaman tomat terinfeksi di awal pertumbuhannya, mungkin tidak ada buah yang terbentuk. Tanaman yang terinfeksi dapat muncul secara acak di seluruh taman',
@@ -161,11 +213,19 @@ export const diseases = [
       'Di akhir musim, singkirkan semua tanaman yang rentan dan bakar atau buang',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 8,
+    slug: 'mosaic_virus',
     name: 'Tomato Mosaic Virus',
     symptoms:
       'Tanaman yang terinfeksi virus menjadi kerdil, seringkali dengan daun yang tidak berkembang dengan baik. Tanaman tampak lebat. Daun mungkin berbintik-bintik, dan seringkali memiliki penampilan "tali sepatu". Buahnya kecil dan bentuknya salah.',
@@ -182,19 +242,29 @@ export const diseases = [
       'Banyak kultivar memiliki ketahanan Tobacco mosaic virus (TMV) (huruf T mengikuti nama kultivar), seperti Bush Celebrity, Bush Early Girl, Jetsetter, Big Beef, Celebrity, Sweet Cluster, Sweet Million (cherry), dan Super Marzano (paste )',
     ],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: 'HGIC Clemson',
+        link: 'Https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
+      },
+      {
+        name_ref: 'Aggie Horticulture',
+        link: 'Https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      },
     ],
   },
   {
+    id: 9,
+    slug: 'healthy',
     name: 'Healthy',
     symptoms: 'Tanaman tampak sehat dan tidak ada penyakit apapun',
     cause: 'Petani yang rajin membersihkan dan merawat tanaman',
     prevention: ['Lebih baik terus dilakukan kebiasaan tersebut'],
     treatment: ['Tidak ada penanganan yang harus dilakukan'],
     ref: [
-      'https://hgic.clemson.edu/factsheet/tomato-diseases-disorders/',
-      'https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/leaves/',
+      {
+        name_ref: '',
+        link: '',
+      },
     ],
   },
 ];
