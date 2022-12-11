@@ -60,6 +60,11 @@ Tomato is one of the horticultural plants that are commonly found in Indonesia. 
 - Tomato Leaf Diseases Computer Vision Project (MFakhrulAM) in [Roboflow](https://universe.roboflow.com/mfakhrulamcapstone/tomato-leaf-diseases)
 - Tomato416_8c Image Dataset (pdata1) in [Roboflow](https://universe.roboflow.com/pdata1/tomato416_8c/dataset/3)
 
+## How to use
+- Access dectma directly on [Vercel](https://dectma.vercel.app) or run `npm start` (you have to install ReactJS first)
+- Upload your image to classifying the disease
+- Wait until the prediction appear
+- If the prediction has appeared, read the prediction
 
 ## Contributing
 
