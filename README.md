@@ -24,13 +24,10 @@ Tomato is one of the horticultural plants that are commonly found in Indonesia. 
 ***Dectma*** (Detection Tomatoes) is a web application to detect diseases in tomatoes through image detection on tomato leaves using YoLo
 
 ## Features ⚙
-
-- 🔎 Detect diseased tomatoes using leaf image
 - 🍂 Classification of diseases in tomatoes
 - 📋 There is an explanation regarding the disease (such as the cause of the disease occurring)
 - 📌 Recommend appropriate treatment to overcome the disease
-- ☀|🌑 LightTheme & DarkTheme
-- 🇮🇩 | 🇬🇧 Support Bahasa and English Language
+- 🔎 Detect diseased tomatoes using leaf image
 
 ## Technology
 
@@ -41,25 +38,28 @@ Tomato is one of the horticultural plants that are commonly found in Indonesia. 
 <a href="https://numpy.org/" target="_blank" rel="noreferrer"> <img src="https://numpy.org/images/logo.svg" alt="numpy" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer"> <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="scikitlearn"  height="40"/> </a> 
 <a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noreferrer"> <img src="https://pjreddie.com/media/image/yologo_2.png" alt="yolo" height="40"/> </a>
-<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="pytorch" height="40"/> </a>
+<a href="https://roboflow.com/" target="_blank" rel="noreferrer"> <img src="https://public.roboflow.com/images/logo.png" alt="roboflow" height="20"/> </a>
 
 ### Web Development
-> <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank" rel="noreferrer"> <img src="https://flask.palletsprojects.com/en/2.2.x/_images/flask-logo.png" alt="flask"  height="40"/> </a> 
+> <a href="https://reactjs.org" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/react-4-1175110.png" alt="reactjs"  height="40"/> </a> 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
 <a href="https://www.w3schools.com/javascript/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"  height="40"/> </a> 
 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
+<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="tailwindcss" width="40" height="40"/> </a> 
 
 ### Tool
 > <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="vscode" width="40" height="40"/> </a>
 <a href="https://colab.research.google.com" target="_blank" rel="noreferrer"> <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="colab" width="40" height="40"/> </a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
 <a href="https://kaggle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original-wordmark.svg" alt="kaggle" height="50"/> </a> 
 
 ## Dataset
 - Tomato Disease Multiple Sources (Qasim Khan, 2022) in [Kaggle](https://www.kaggle.com/datasets/cookiefinder/tomato-disease-multiple-sources)
 - Tomato leaf disease detection (Kaustubh B, 2019) in [Kaggle](https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf)
+- Tomato Leaf Diseases Computer Vision Project (MFakhrulAM) in [Roboflow](https://universe.roboflow.com/mfakhrulamcapstone/tomato-leaf-diseases)
+- Tomato416_8c Image Dataset (pdata1) in [Roboflow](https://universe.roboflow.com/pdata1/tomato416_8c/dataset/3)
+
 
 ## Contributing
 
